@@ -1,0 +1,232 @@
+===== SHIVANSH SNACK CENTER =====
+Pizza Qty:2 Amount:300.00
+Vada Pav Qty:1 Amount:20.00
+
+Total Bill = Rs.320.00
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SpendWise | Python Core Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #0d1424;
+            color: #f5f7ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 25px;
+        }
+
+        .project-box {
+            width: 100%;
+            max-width: 850px;
+            background: #1e293b;
+            border: 1px solid #22c55e;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 0 25px rgba(34, 197, 94, 0.12);
+        }
+
+        h1 {
+            color: #4ade80;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .subtitle {
+            color: #cbd5e1;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .terminal {
+            background: #080d18;
+            border-radius: 10px;
+            padding: 22px;
+            font-family: Consolas, monospace;
+            line-height: 1.9;
+            overflow-wrap: anywhere;
+
+            /* Center all terminal text */
+            text-align: center;
+        }
+
+        .terminal-title {
+            color: #4ade80;
+            margin-bottom: 14px;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        .line {
+            color: #e2e8f0;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #facc15;
+        }
+
+        .success {
+            color: #4ade80;
+        }
+
+        .section-title {
+            color: #4ade80;
+            margin: 24px 0 10px;
+            font-size: 19px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .feature {
+            padding: 13px;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            background: #172033;
+            color: #e2e8f0;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 25px auto 0;
+            padding: 11px 23px;
+            background: #22c55e;
+            color: #07120a;
+            border-radius: 7px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: #86efac;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .project-box {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .terminal {
+                padding: 15px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="project-box">
+
+        <h1>💰 SpendWise</h1>
+        <!-- <p class="subtitle">Python Core Project | Expense Management System</p> -->
+
+        <div class="terminal">
+
+            <!-- <div class="terminal-title">
+                C:\Projects\SpendWise&gt; python main.py
+            </div> -->
+
+            <div class="line">===================================</div>
+            <div class="line highlight">          💰 SPENDWISE</div>
+            <div class="line">     Expense Management System</div>
+            <div class="line">===================================</div>
+
+            <br>
+
+            <div class="line">========== MAIN MENU ==========</div>
+            <div class="line">1. Register</div>
+            <div class="line">2. Login</div>
+            <div class="line">3. Exit</div>
+
+            <br>
+
+            <div class="line highlight">Enter your choice: 2</div>
+            <div class="line success">Login successful!</div>
+
+            <br>
+
+            <div class="line">========== SPENDWISE MENU ==========</div>
+            <div class="line">1. Add Expense</div>
+            <div class="line">2. View Expenses</div>
+            <div class="line">3. Search Expense</div>
+            <div class="line">4. Update Expense</div>
+            <div class="line">5. Delete Expense</div>
+            <div class="line">6. Total Expense</div>
+            <div class="line">7. Category-wise Expense</div>
+            <div class="line">8. Monthly Expense</div>
+            <div class="line">9. Logout</div>
+
+            <br>
+
+            <div class="line highlight">Enter your choice: 6</div>
+            <div class="line">========== TOTAL EXPENSE ==========</div>
+            <div class="line success">Total Expense: ₹ 4500.0</div>
+
+            <br>
+
+            <!-- <div class="line success">
+                &gt; Expense management made simple!
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Project Features</h2>
+
+        <div class="features">
+            <div class="feature">👤 User Registration & Login</div>
+            <div class="feature">➕ Add Expenses</div>
+            <div class="feature">📋 View All Expenses</div>
+            <div class="feature">🔎 Search Expenses</div>
+            <div class="feature">✏️ Update Expenses</div>
+            <div class="feature">🗑️ Delete Expenses</div>
+            <div class="feature">💵 Total Expense Report</div>
+            <div class="feature">📊 Category & Monthly Reports</div>
+        </div>
+
+        <a href="front.html" class="back-btn">← Back to Portfolio</a> -->
+
+    </main>
+
+</body>
+</html>
