@@ -1090,31 +1090,86 @@ footer p {
     position: relative;
     z-index: 2;
 } 
-/* Skills Cards - 3 Cards in One Row */
+/* ========================================
+   SKILLS CARDS - COMPACT RESPONSIVE LAYOUT
+   Existing dark navy, blue & cyan theme
+======================================== */
+
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    max-width: 900px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    width: 100%;
+    max-width: none;
     margin: 0 auto;
+    align-items: stretch;
 }
 
 .skill-card {
-    padding: 15px;
-    min-height: 120px;
+    width: 100%;
+    min-width: 0;
+    min-height: 125px;
+    padding: 18px 20px;
     border-radius: 12px;
+    text-align: center;
+    overflow-wrap: anywhere;
+    transition: transform 0.25s ease, border-color 0.25s ease,
+                box-shadow 0.25s ease;
 }
 
-/* Tablet */
-@media (max-width: 768px) {
+.skill-card i {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.skill-card h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.skill-card p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+/* Tablet: 2 cards per row */
+@media (max-width: 992px) {
     .skills-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .skill-card {
+        min-height: 115px;
+        padding: 16px 18px;
     }
 }
 
-/* Mobile */
-@media (max-width: 500px) {
+/* Mobile: 1 card per row */
+@media (max-width: 576px) {
     .skills-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .skill-card {
+        min-height: 0;
+        padding: 16px;
+    }
+
+    .skill-card i {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+
+    .skill-card h3 {
+        font-size: 17px;
+    }
+
+    .skill-card p {
+        font-size: 14px;
     }
 }
