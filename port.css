@@ -1090,3 +1090,31 @@ footer p {
     position: relative;
     z-index: 2;
 } 
+/* Skills Cards - 3 Cards in One Row */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    padding: 15px;
+    min-height: 120px;
+    border-radius: 12px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
